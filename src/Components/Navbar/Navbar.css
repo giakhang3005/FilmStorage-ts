@@ -1,0 +1,132 @@
+body {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+.Navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px 5px 10px;
+  margin: 0;
+}
+#darkNavbar {
+  background-color: #1b1b1b;
+}
+.Navbar .title {
+  margin: 0;
+  padding: 0;
+  min-width: 100px;
+}
+.Navbar ul {
+  width: 25%;
+  margin-left: 10%;
+  min-width: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+.Navbar a {
+  text-decoration: none;
+  padding: 0 3.5px 4px 3.5px;
+  font-weight: 500;
+  transition: all 0.05s linear;
+}
+#lightnav a {
+  color: black;
+}
+#darknav a {
+  color: white;
+}
+#lightnav a:hover {
+  color: #d62d24;
+  border-bottom: 1px solid #ab1a13;
+}
+#darknav a:hover {
+  color: #d62d24;
+  border-bottom: 1px solid #ab1a13;
+}
+#lightfilms {
+  color: black;
+}
+#darkfilms {
+  color: white;
+}
+#lightstorage {
+  color: #d62d24;
+}
+#darkstorage {
+  color: #ab1a13;
+}
+.activelight {
+  border-bottom: 1px solid #ab1a13;
+}
+.activedark {
+  border-bottom: 1px solid #ab1a13;
+}
+.MenuBtn {
+  margin-left: 5px;
+  display: none;
+}
+#darkMenuHambur {
+  color: white;
+  background-color: #1b1b1b;
+}
+.lowWidthMenuDisplay {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.lowWidthMenuDisplayNone {
+  display: none;
+}
+.lowWidthMenu {
+  padding: 0 8px 0 0;
+}
+.lowWidthMenu ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 10px 0 10px 5px;
+}
+.lowWidthMenu ul li a {
+  padding: 0 3px 0 3px;
+  margin: 0 5px 0 5px;
+  text-decoration: none;
+}
+.MenuBtn {
+  border: none;
+}
+#darkMenuBtn {
+  background: transparent;
+  color: white;
+}
+.lowWidthAva {
+  min-width: 270px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.lowWidthAva p {
+  font-size: 12px;
+  margin: 0;
+  padding: 0;
+}
+@media only screen and (min-width: 800px) {
+  .lowWidthMenuDisplay {
+    display: none;
+  }
+}
+@media only screen and (max-width: 799px) {
+  .MenuBtn {
+    display: block;
+  }
+  .Navbar ul, .Navbar .ModeSwitch {
+    display: none;
+    list-style: none;
+  }
+  .lowWidthAva {
+    display: none;
+  }
+}
