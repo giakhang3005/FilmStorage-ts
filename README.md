@@ -15,10 +15,12 @@ This is a Films Storage website with light and dark mode, which you can find inf
 
 <h3>Image</h3>
 
+<h5>Home Page</h5>
 <img width="1375" alt="Ảnh chụp Màn hình 2023-11-19 lúc 22 34 15" src="https://github.com/giakhang3005/FilmStorage-ts/assets/45289938/9c2cdc78-d943-4004-a458-d5e24811da79">
 
 <img width="1371" alt="Ảnh chụp Màn hình 2023-11-19 lúc 22 34 34" src="https://github.com/giakhang3005/FilmStorage-ts/assets/45289938/2373365c-4e6c-48f1-92e3-480fe0d9c70b">
 
+<h5>Film details</h5>
 <img width="1378" alt="Ảnh chụp Màn hình 2023-11-19 lúc 22 34 52" src="https://github.com/giakhang3005/FilmStorage-ts/assets/45289938/4013a8d2-8324-4538-9930-81f54cdceb5c">
 
 <img width="1375" alt="Ảnh chụp Màn hình 2023-11-19 lúc 22 35 06" src="https://github.com/giakhang3005/FilmStorage-ts/assets/45289938/4ce09ce6-f225-45d5-9f4a-edaa783158d7">
