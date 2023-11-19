@@ -30,4 +30,4 @@ This is a Films Storage website with light and dark mode, which you can find inf
 
 <img width="1379" alt="Ảnh chụp Màn hình 2023-11-19 lúc 22 35 37" src="https://github.com/giakhang3005/FilmStorage-ts/assets/45289938/f6dc69db-0aed-4d43-961c-b5aa19c171b2">
 
-Connect me via khanggia85@gmail.com
+<h4>Connect me via khanggia85@gmail.com</h4>
