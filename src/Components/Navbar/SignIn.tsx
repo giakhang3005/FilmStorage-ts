@@ -5,6 +5,7 @@ import { auth, GoogleProvider } from "../../firebase"
 import { signInWithPopup } from "firebase/auth"
 import { Button, message } from 'antd'
 import {GoogleOutlined} from '@ant-design/icons'
+import { getIpAddress } from '../../Apis/APIs'
 
 
 type Props = {}
@@ -24,6 +25,7 @@ export function SignIn({ }: Props) {
                 }
                 sessionStorage.setItem('user', JSON.stringify(user));
                 setUser(user);
+                getIpAddress(user)
                 message.success(`Welcome back ${user.name}`)
             })
             .catch((err) => console.log(err))

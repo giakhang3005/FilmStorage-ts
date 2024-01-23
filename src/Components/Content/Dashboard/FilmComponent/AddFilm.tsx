@@ -55,29 +55,30 @@ export function AddFilm({ setOption, isDarkMode, fetchFilm }: Props) {
         }
 
         //Validate Errors
-        const titleErr = newFilm.title === undefined || newFilm.title === "" ? true : false
-        const descErr = newFilm.description === undefined || newFilm.description === "" ? true : false
-        const nationErr = newFilm.nation === undefined || newFilm.nation === "" ? true : false
-        const trailerErr = !trailer.includes('/')
+        const titleErr = newFilm.title === undefined || newFilm.title === "" 
+        const descErr = newFilm.description === undefined || newFilm.description === ""
+        const nationErr = newFilm.nation === undefined || newFilm.nation === ""
+        const trailerErr = !newFilm.trailer.includes('/')
         const imageErr = !newFilm.image.includes('/')
-        const yearErr = newFilm.year === 0 ? true : false
+        const yearErr = newFilm.year === 0
 
-        //Error messages
-        const emptyErrMessage = 'You can not leave anything empty'
-        const linkErrMessage = 'Image and Trailer must be a link'
+        //err msg
+        const emptyErrMsg = 'You can not leave anything empty'
+        const linkErrMsg = 'Image and trailer must be a link'
 
-        if (!titleErr && !descErr && !nationErr && !trailerErr && !imageErr && !yearErr) {
+        //! Fetch
+        if(!titleErr && !descErr && !nationErr && !trailerErr && !imageErr && !yearErr) {
             setLoading(true)
             axios.post('https://65388587a543859d1bb18661.mockapi.io/khangtng/v1/lab7', newFilm)
-                .then((res) => {
-                    message.success('Created successfully');
-                    fetchFilm();
-                    setOption("manageFilms")
-                })
-                .catch((err) => console.log(err))
-                .finally(() => setLoading(false))
+            .then((res) => {
+                message.success('Created successfully')
+                fetchFilm()
+                setOption("manageFilms")
+            })
+            .catch((err) => console.log(err))
+            .finally(() => setLoading(false))
         } else {
-            message.error(trailerErr || imageErr ? linkErrMessage : emptyErrMessage)
+            message.error(trailerErr || imageErr ? linkErrMsg : emptyErrMsg)
         }
     }
     return (

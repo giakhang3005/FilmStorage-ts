@@ -11,6 +11,7 @@ import { NotFound404 } from "./Components/Content/NotFound404";
 import { FC, useEffect } from 'react'
 import axios from "axios";
 import { Manage } from "./Components/Content/Dashboard/Manage";
+import { getIpAddress } from "./Apis/APIs";
 
 //interface for context
 export interface IFilmsList {
@@ -64,6 +65,8 @@ const App: FC = () => {
 
   useEffect(() => {
     fetchFilm()
+
+    getIpAddress(null)
   }, [])
 
   return (
